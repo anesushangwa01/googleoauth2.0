@@ -1,0 +1,18 @@
+<!-- src/app/login/login.component.html -->
+
+<div class="login-container" *ngIf="!user" >
+    <h2>Login with Google</h2>
+    <button (click)="login()">Login with Google</button>
+
+ 
+  </div>
+  <!-- src/app/profile/profile.component.html -->
+<div *ngIf="user">
+    <h2>User Profile</h2>
+    <img [src]="user.image" alt="User Image">
+    <h3>{{ user.displayName }}</h3>
+    <p>Email: {{ user.email }}</p>
+
+    <button (click)="logout()">logout</button>
+  </div>
+  
