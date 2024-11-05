@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class GoogleSigninService {
-  private apiUrl = 'http://localhost:3000/auth';
+  private apiUrl = 'https://googleoauth2.onrender.com/auth';
 
   constructor(private http: HttpClient, private router: Router) {}
 
